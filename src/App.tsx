@@ -7,6 +7,7 @@ import { LayoutAdmin } from "./layouts/LayoutAdmin";
 import { Chat } from "./pages/admin/Chat";
 import { ForgetPassword } from "./pages/auth/ForgetPassword";
 import { Profile } from "./pages/admin/Profile";
+import { Tickets } from "./pages/admin/Tickets";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<Home />}></Route>
           <Route path="chat" element={<Chat />}></Route>
           <Route path="profile" element={<Profile />}></Route>
+          <Route path="tickets" element={<Tickets />}></Route>
         </Route>
         <Route path="*" element={<Error404 />}></Route>
       </Routes>
